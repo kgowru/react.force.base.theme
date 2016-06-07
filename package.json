@@ -21,9 +21,6 @@
     ]
   },
   "homepage": "https://github.com/ForceDotComLabs/react.force.base.theme#readme",
-  "peerDependencies": {
-    "react-native": ">=0.20.0"
-  },
   "dependencies": {
     "lodash.filter": "^4.4.0",
     "lodash.omitby": "^4.4.0",

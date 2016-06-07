@@ -24,12 +24,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
  
-const React = require('react-native');
+const React = require('react');
 
 const {
   Text,
   View
-} = React;
+} = require('react-native');
 
 const BaseIconNative = require('../BaseIconNative');
 

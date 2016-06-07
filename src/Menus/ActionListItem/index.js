@@ -26,11 +26,12 @@
  
 'use strict';
 
-const React = require('react-native');
+const React = require('react');
+const ReactNative = require('react-native');
 const styles = require('./styles');
 const Text = require('../../Text');
 const Icons = require('../../Icons');
-const {View, TouchableHighlight} = React;
+const {View, TouchableHighlight} = ReactNative;
 
 module.exports = React.createClass({
   getDefaultProps () {

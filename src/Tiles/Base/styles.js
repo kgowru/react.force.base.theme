@@ -40,9 +40,9 @@ module.exports = {
      overflow: 'hidden' },
   'Text slds-tile__title slds-truncate': {},
   'View a': { backgroundColor: 'transparent' },
-  'Text a': { color: '#0070d2' },
+  'Text a': { color: '#0070d2', fontSize: __APPLETV__ ? 48 : 16 },
   'View slds-tile__detail slds-text-body--small': { position: 'relative' },
-  'Text slds-tile__detail slds-text-body--small': { fontSize: 12, color: '#54698d' },
+  'Text slds-tile__detail slds-text-body--small': { fontSize: __APPLETV__ ? 36 : 12, color: '#54698d' },
   'View slds-truncate':
    { marginTop: 0,
      marginBottom: 0,

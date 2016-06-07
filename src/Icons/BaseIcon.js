@@ -24,20 +24,20 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
  
-const React = require('react-native');
+const React = require('react');
 
 const {
   StyleSheet,
   Text,
   View,
   PixelRatio
-} = React;
+} = require('react-native');
 
 module.exports = React.createClass({
 
   getDefaultProps(){
     return {
-      size: 50,
+      size: __APPLETV__ ? 200 : 50,
       iconCode: "\uEA03",
       iconColor: "#54698d",
       bgColor: 'transparent',

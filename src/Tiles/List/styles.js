@@ -65,7 +65,7 @@ module.exports = { 'View slds-list--vertical slds-has-dividers--bottom-space sld
      overflow: 'hidden' },
   'Text slds-tile__title slds-truncate': {},
   'View a': { backgroundColor: 'transparent' },
-  'Text a': { color: '#0070d2' },
+  'Text a': { color: '#0070d2', fontSize: __APPLETV__ ? 48 : 16 },
   'View slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small':
    { marginTop: 0,
      marginBottom: 0,
@@ -76,7 +76,7 @@ module.exports = { 'View slds-list--vertical slds-has-dividers--bottom-space sld
      paddingLeft: 0,
      paddingRight: 0,
      position: 'relative' },
-  'Text slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small': { fontSize: 12, color: '#54698d' },
+  'Text slds-tile__detail slds-list--horizontal slds-has-dividers slds-text-body--small': { fontSize: __APPLETV__ ? 36 : 12, color: '#54698d' },
   'View slds-truncate slds-list__item':
    { marginRight: 0,
      paddingRight: 0,

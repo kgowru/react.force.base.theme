@@ -31,7 +31,7 @@ module.exports = { 'View slds-badge':
      paddingLeft: 8,
      paddingRight: 8,
      paddingTop: 4 },
-  'Text slds-badge': { fontSize: 10, color: '#16325c' },
+  'Text slds-badge': { fontSize: __APPLETV__ ? 30 : 10, color: '#16325c' },
   'View slds-badge slds-theme--default':
    { backgroundColor: '#fff',
      borderRadius: 240,
@@ -40,7 +40,7 @@ module.exports = { 'View slds-badge':
      paddingLeft: 8,
      paddingRight: 8,
      paddingTop: 4 },
-  'Text slds-badge slds-theme--default': { fontSize: 10, color: '#16325c' },
+  'Text slds-badge slds-theme--default': { fontSize: __APPLETV__ ? 30 : 10, color: '#16325c' },
   'View slds-badge slds-theme--shade':
    { backgroundColor: '#f4f6f9',
      borderRadius: 240,
@@ -49,7 +49,7 @@ module.exports = { 'View slds-badge':
      paddingLeft: 8,
      paddingRight: 8,
      paddingTop: 4 },
-  'Text slds-badge slds-theme--shade': { fontSize: 10, color: '#16325c' },
+  'Text slds-badge slds-theme--shade': { fontSize: __APPLETV__ ? 30 : 10, color: '#16325c' },
   'View slds-badge slds-theme--inverse':
    { backgroundColor: '#061c3f',
      borderBottomColor: '#061c3f',
@@ -62,5 +62,5 @@ module.exports = { 'View slds-badge':
      paddingLeft: 8,
      paddingRight: 8,
      paddingTop: 4 },
-  'Text slds-badge slds-theme--inverse': { fontSize: 10, color: '#fff' } 
+  'Text slds-badge slds-theme--inverse': { fontSize: __APPLETV__ ? 30 : 10, color: '#fff' } 
 };

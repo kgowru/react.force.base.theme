@@ -59,7 +59,7 @@ module.exports = { 'View slds-page-header':
      paddingRight: 0,
      alignSelf: 'center',
      overflow: 'hidden' },
-  'Text slds-page-header__title slds-truncate slds-align-middle': { fontSize: 18, fontWeight: '300' },
+  'Text slds-page-header__title slds-truncate slds-align-middle': { fontSize: __APPLETV__ ? 48 : 18, fontWeight: '300' },
   'View slds-text-body--small slds-page-header__info':
    { marginTop: 4,
      marginBottom: 0,
@@ -69,4 +69,4 @@ module.exports = { 'View slds-page-header':
      paddingBottom: 0,
      paddingLeft: 0,
      paddingRight: 0 },
-  'Text slds-text-body--small slds-page-header__info': { fontSize: 12, color: '#54698d' } };
+  'Text slds-text-body--small slds-page-header__info': { fontSize: __APPLETV__ ? 36 : 12, color: '#54698d' } };

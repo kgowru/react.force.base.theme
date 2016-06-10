@@ -23,7 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 'use strict';
 
 const React = require('react');
@@ -47,9 +47,25 @@ module.exports = React.createClass({
     if(this.props.image){
       return this.props.image;
     }
-    return (
-        <Icons.Action style={{width:40,height:40}} name={this.props.icon} />
-    );
+
+    let icon = null;
+    switch (this.props.iconType) {
+      case 'standard':
+        icon = <Icons.Standard style={{width:40,height:40}} name={this.props.icon} />;
+        break;
+      case 'action':
+        icon = <Icons.Action style={{width:40,height:40}} name={this.props.icon} />;
+        break;
+      case 'custom':
+        icon = <Icons.Custom style={{width:40,height:40}} name={this.props.icon} />;
+        break;
+      case 'utility':
+        icon = <Icons.Utility style={{width:40,height:40}} name={this.props.icon} />;
+        break;
+      default :
+        icon = <Icons.Action style={{width:40,height:40}} name={this.props.icon} />
+    }
+    return icon;
 
   },
   render () {

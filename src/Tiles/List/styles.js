@@ -23,7 +23,6 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
 module.exports = { 'View slds-list--vertical slds-has-dividers--bottom-space slds-has-list-interactions':
    { marginTop: 0,
      marginBottom: 0,
@@ -39,8 +38,9 @@ module.exports = { 'View slds-list--vertical slds-has-dividers--bottom-space sld
      paddingBottom: 12,
      paddingLeft: 12,
      paddingRight: 12,
-     borderBottomWidth: 1,
-     borderBottomColor: '#d8dde6' },
+     borderBottomWidth: __APPLETV__ ? 1 : 0,
+     borderBottomColor: '#d8dde6'
+      },
   'Text slds-list__item slds-not-selected': {},
   'View slds-media slds-tile': { alignItems: 'flex-start' },
   'Text slds-media slds-tile': {},

@@ -23,7 +23,6 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
 'use strict';
 
 const React = require('react');
@@ -55,8 +54,7 @@ module.exports = React.createClass({
       <View ref={component => this._root = component} {...this.props} style={styles['View slds-list__item slds-not-selected']}>
         <View style={[styles['View slds-media slds-tile'],{
             flex: 1,
-            flexDirection:'row'}]}>
-
+            flexDirection:__APPLETV__ ? 'column' : 'row'}]}>
           <View style={styles['View slds-media__figure']}>
 {/*
             <Icons.Standard style={styles['View slds-icon icon-doctype-zip']} name={this.props.icon} />

@@ -34,23 +34,25 @@ module.exports = { 'View slds-list--vertical slds-has-dividers--bottom-space sld
      paddingRight: 0 },
   'Text slds-list--vertical slds-has-dividers--bottom-space slds-has-list-interactions': {},
   'View slds-list__item slds-not-selected':
-   { paddingTop: 12,
-     paddingBottom: 12,
-     paddingLeft: 12,
-     paddingRight: 12,
-     borderBottomWidth: __APPLETV__ ? 1 : 0,
+   { paddingTop:  __APPLETV__ ? 0 : 12,
+     paddingBottom:  __APPLETV__ ? 0 : 12,
+     paddingLeft:  __APPLETV__ ? 0 : 12,
+     paddingRight: __APPLETV__ ? 0 :  12,
+     borderBottomWidth: __APPLETV__ ? 0 : 1,
      borderBottomColor: '#d8dde6'
       },
   'Text slds-list__item slds-not-selected': {},
   'View slds-media slds-tile': { alignItems: 'flex-start' },
   'Text slds-media slds-tile': {},
-  'View slds-media__figure': { marginRight: 12 },
+  'View slds-media__figure': {
+    marginRight: __APPLETV__ ? 0 : 12
+  },
   'Text slds-media__figure': {},
   'View slds-icon icon-doctype-zip': { width: 32, height: 32, borderRadius: 4, overflow: 'hidden' },
   'Text slds-icon icon-doctype-zip': {},
   'View use': {},
   'Text use': {},
-  'View slds-media__body': { marginBottom: 0, flex: 1 },
+  'View slds-media__body': { marginBottom: 0, flex: 1, marginTop: __APPLETV__ ? 10 : 0 , marginLeft: __APPLETV__ ? 10 : 0 },
   'Text slds-media__body': {},
   'View slds-tile__title slds-truncate':
    { marginTop: 0,

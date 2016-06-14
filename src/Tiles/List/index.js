@@ -55,6 +55,7 @@ module.exports = React.createClass({
         <View style={[styles['View slds-media slds-tile'],{
             flex: 1,
             flexDirection:__APPLETV__ ? 'column' : 'row'}]}>
+
           <View style={styles['View slds-media__figure']}>
 {/*
             <Icons.Standard style={styles['View slds-icon icon-doctype-zip']} name={this.props.icon} />
@@ -74,6 +75,9 @@ module.exports = React.createClass({
                 {this.props.detail}
               </Text>
             </View>
+            {/*
+              add another field option here
+            */}
           </View>
         </View>
       </View>

@@ -23,13 +23,13 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
-module.exports = { 
+
+module.exports = {
   'View slds-form-element': { position: 'relative' },
   'Text slds-form-element': {},
   'View slds-form-element__label': { marginBottom: 4, marginRight: 12 },
-  'Text slds-form-element__label': { fontSize: __APPLETV__ ? 36 : 12, color: '#54698d' },
-  'View slds-form-element__control slds-has-divider--bottom': { borderBottomWidth: 1, borderBottomColor: '#d8dde6' },
+  'Text slds-form-element__label': { fontSize: __APPLETV__ ? 36 : 12, color: __APPLETV__ ? 'white' : '#54698d' },
+  'View slds-form-element__control slds-has-divider--bottom': { borderBottomWidth: 1, borderBottomColor: __APPLETV__ ? 'white' : '#d8dde6' },
   'Text slds-form-element__control slds-has-divider--bottom': {},
   'View slds-form-element__static': {},
-  'Text slds-form-element__static': { lineHeight: 34 } };
+  'Text slds-form-element__static': { lineHeight: 34, color: 'white', fontSize:20 } };

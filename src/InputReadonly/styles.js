@@ -28,7 +28,7 @@ module.exports = {
   'View slds-form-element': { position: 'relative' },
   'Text slds-form-element': {},
   'View slds-form-element__label': { marginBottom: 4, marginRight: 12, paddingTop:10},
-  'Text slds-form-element__label': { fontSize: __APPLETV__ ? 36 : 12, color: __APPLETV__ ? '#829CBA' : '#54698d' },
+  'Text slds-form-element__label': { fontSize: __APPLETV__ ? 30 : 12, color: __APPLETV__ ? '#829CBA' : '#54698d' },
   'View slds-form-element__control slds-has-divider--bottom': { borderBottomWidth: 1, borderBottomColor: __APPLETV__ ? 'transparent' : '#d8dde6', paddingBottom:10},
   'Text slds-form-element__control slds-has-divider--bottom': {},
   'View slds-form-element__static': {},

@@ -23,7 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 'use strict';
 
 const React = require('react');
@@ -48,11 +48,11 @@ module.exports = React.createClass({
   },
   render () {
     return (
-      <TouchableHighlight 
+      <TouchableHighlight
           activeOpacity={1}
           underlayColor="rgb(210, 230, 255)"
-          onPress={this.handlePress}>
-        <View ref={component => this._root = component} {...this.props} 
+          onPress={()=>{return;}}>
+        <View ref={component => this._root = component} {...this.props}
           style={[styles['View slds-button slds-button--brand'],{paddingTop:8,paddingBottom:8}]}>
             <Text
               style={styles['Text slds-button slds-button--brand']}

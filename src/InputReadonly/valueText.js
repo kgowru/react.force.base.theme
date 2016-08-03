@@ -23,7 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 'use strict';
 
 const React = require('react');
@@ -42,6 +42,7 @@ module.exports = React.createClass({
     return (
       <Text
         style={[styles['Text slds-form-element__static'],this.props.style]}
+        numberOfLines={1}
       >
         {this.props.children}
       </Text>
